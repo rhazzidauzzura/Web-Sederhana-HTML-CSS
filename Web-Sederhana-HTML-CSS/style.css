@@ -1,0 +1,240 @@
+/* write your code here */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300);
+.active {
+  background-color: rgb(51, 48, 48);
+  border-radius: 15px;
+  color: red;
+}
+body {
+  background: rgb(221, 218, 218);
+  margin: 0;
+  font-family: "open sans", sans-serif;
+}
+hr {
+  border: 0;
+  background: #dedede;
+  height: 2px;
+}
+header img {
+  margin-top: 8px;
+  border-radius: 10px;
+}
+header {
+  text-align: center;
+  color: #232323;
+}
+
+header .judul {
+  font-size: 17pt;
+}
+header .deskripsi {
+  font-size: 11pt;
+}
+
+.wrap {
+  width: 950px;
+  margin: 25px auto;
+}
+nav.menu ul {
+  overflow: hidden;
+  color: #fff;
+  list-style: none;
+  float: left;
+  padding: 0px;
+  width: 650px;
+  margin: 0 0 0;
+  background: #232323;
+  box-shadow: 5px 5px 5px 0px rbga(148, 137, 137, 0.55);
+  border-radius: 15px;
+  display: flex;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: red;
+}
+nav.menu ul li {
+  margin: 15px;
+  float: left;
+  flex: 1;
+}
+nav.menu ul a {
+  padding: 10px;
+  display: block;
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+  text-decoration: none;
+  text-align: center;
+}
+.active a {
+  color: red;
+}
+nav.menu ul a:hover {
+  text-decoration: underline;
+  border-radius: 15px;
+  background: #fff;
+  color: #232323;
+}
+nav.menu ul a:active {
+  color: red;
+}
+.sidebar {
+  float: right;
+  width: 275px;
+}
+.widget-pict {
+  border-radius: 8px;
+}
+.sidebar .widget {
+  padding: 25px;
+  margin: 0 0 25px;
+  background: #fff;
+  border-bottom: 2px solid #fff;
+  transition: all 0.5s ease;
+  border-radius: 15px;
+  border: 1px solid #232323;
+}
+.sidebar .widget:hover {
+  border-bottom: 4px solid #232323;
+  box-shadow: 3px 3px 3px 0;
+}
+.sidebar .widget h2 {
+  padding: 0;
+  margin: 0 0 15px;
+  color: #232323;
+  font-size: 17px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.sidebar .widget p {
+  font-size: 14px;
+}
+.sidebar .widget p:last-child {
+  margin: 0;
+}
+.blog {
+  float: left;
+}
+.widget .faq-selengkapnya {
+  color: blue;
+  transition: all 0.5s ease;
+  text-decoration: none;
+  font-weight: 700;
+}
+.faq-selengkapnya:hover {
+  margin-left: 10px;
+}
+.conteudo {
+  width: 600px;
+  padding: 25px;
+  margin: 25px auto;
+  background: #fff;
+  transition: all 0.5s ease;
+  border: 1px solid #dedede;
+  box-shadow: 1px 1px 1px 0 #fff;
+  border-radius: 15px 25px;
+  background-color: #fff;
+}
+.conteudo:hover {
+  box-shadow: 5px 5px 5px 0 #232323;
+}
+.conteudo img {
+  min-width: 650px;
+  margin: 0 0 25px -25px;
+  max-width: 650px;
+}
+.conteudo h1 {
+  padding: 0;
+  margin: 0 0 15px;
+  font-weight: normal;
+  color: black;
+  font-family: georgia;
+}
+.conteudo p:last-child {
+  margin: 0;
+}
+.conteudo .continue-lendo {
+  color: blue;
+  transition: all 0.5s ease;
+  text-decoration: none;
+  font-weight: 700;
+}
+.conteudo .continue-lendo:hover {
+  margin-left: 15px;
+}
+.post-info {
+  float: right;
+  font-size: 12px;
+  margin: auto;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 960px) {
+  .header {
+    position: inherit;
+  }
+  .wrap {
+    width: 90%;
+    margin: 25px auto;
+  }
+  .sidebar {
+    width: 100%;
+    margin: 25px 0 0;
+    float: right;
+  }
+  .sidebar .widget {
+    padding: 5%;
+  }
+  nav.menu ul {
+    width: 100%;
+    float: inherit;
+  }
+  nav.menu ul li {
+    float: inherit;
+    margin: 0;
+  }
+  nav.menu ul a {
+    padding: 15px;
+    font-size: 16px;
+    border-top: 1px solid turquoise;
+    border-bottom: 1px solid turquoise;
+  }
+  .blog {
+    width: 90%;
+  }
+  .conteudo {
+    float: inherit;
+    margin: 0 auto 25px;
+    width: 101%;
+    border: 1px solid #dedede;
+    padding: 5%;
+    background: #fff;
+  }
+  .conteudo img {
+    max-width: 110%;
+    margin: 0 0 25px -5%;
+    min-width: 110%;
+  }
+  .conteudo .continue-lendo:hover {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  nav.menu ul a {
+    padding: 15px;
+    font-size: 14px;
+  }
+  .sidebar {
+    display: none;
+  }
+  .post-info {
+    display: none;
+  }
+  .conteudo {
+    margin: 25px auto;
+  }
+  .conteudo img {
+    margin: -5% 0 25px -5%;
+  }
+}
